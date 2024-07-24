@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#4CAF50"
+    android:layout_height="match_parent"
+
+    tools:context=".fragment.TiemChungFragment">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <ImageView
+           android:id="@+id/im"
+           android:layout_width="match_parent"
+           android:layout_height="84dp"
+           android:src="@drawable/sotiem" />
+       <ScrollView
+           android:id="@+id/sc"
+           android:background="@drawable/shape"
+           android:backgroundTint="#06870B"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="16dp"
+           android:layout_below="@id/im"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+          <RelativeLayout
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+              <com.google.android.material.textfield.TextInputLayout
+                  android:layout_width="match_parent"
+                  android:id="@+id/ti_dmvs"
+                  android:layout_marginTop="50dp"
+                  android:layout_marginLeft="10dp"
+                  android:background="@drawable/shape"
+                  android:layout_height="50dp"
+                  >
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:textColor="#056008"
+                      android:textSize="20dp"
+                      android:text="DANH MỤC VẮC XIN"/>
+              </com.google.android.material.textfield.TextInputLayout>
+
+              <com.google.android.material.textfield.TextInputLayout
+                  android:layout_width="match_parent"
+                  android:id="@+id/ti_thontin"
+                  android:layout_below="@id/ti_dmvs"
+                  android:layout_marginTop="90dp"
+                  android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                  android:layout_height="60dp"
+                  >
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="60dp"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:textColor="#056008"
+                      android:textSize="15dp"
+                      android:text="Những điều ba mẹ nên biết về vắc xin tiêm chủng >"/>
+
+
+              </com.google.android.material.textfield.TextInputLayout>
+              <com.google.android.material.textfield.TextInputLayout
+                  android:layout_width="match_parent"
+                  android:id="@+id/ti_cacbachame"
+                  android:layout_below="@id/ti_thontin"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="25dp"
+                  android:background="@color/white"
+                  android:layout_height="60dp"
+                  >
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="60dp"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:textColor="#056008"
+                      android:textSize="15dp"
+                      android:text="Các bậc cha mẹ đưa con đi tiêm chủng cần thực hiện>"/>
+
+              </com.google.android.material.textfield.TextInputLayout>
+
+              <com.google.android.material.textfield.TextInputLayout
+                  android:layout_width="match_parent"
+                  android:id="@+id/ti_benhtruyennhiem"
+                  android:layout_below="@id/ti_cacbachame"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="25dp"
+                  android:background="@color/white"
+                  android:layout_height="60dp"
+                  >
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="60dp"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:textColor="#056008"
+                      android:textSize="15dp"
+                      android:text="Những điều cần biết trước khi tiêm chủng >"/>
+              </com.google.android.material.textfield.TextInputLayout>
+
+              <com.google.android.material.textfield.TextInputLayout
+                  android:layout_width="match_parent"
+                  android:id="@+id/ti_sautiemchung"
+                  android:layout_below="@id/ti_benhtruyennhiem"
+                  android:layout_marginLeft="10dp"
+                  android:background="@color/white"
+                  android:layout_marginTop="25dp"
+                  android:layout_height="60dp"
+                  >
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="60dp"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:textColor="#056008"
+                      android:textSize="15dp"
+                      android:text="Những điều cần biết sau khi tiêm chủng >"/>
+              </com.google.android.material.textfield.TextInputLayout>
+          </RelativeLayout>
+       </ScrollView>
+   </RelativeLayout>
+
+</FrameLayout>

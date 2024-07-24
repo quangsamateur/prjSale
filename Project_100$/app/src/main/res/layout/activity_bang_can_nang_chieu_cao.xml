@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cannangchieucao.BangCanNangChieuCaoActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#E91E63"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:title="Hiểu thêm về Cân nặng, Chiều cao"
+        tools:layout_editor_absoluteX="-42dp"></androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/bl"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/idl"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/tiel1"
+                android:textStyle="bold"
+                android:text="Bảng chiều cao cân nặng chuẩn của trẻ em từ 0-3 tuổi"
+                android:textSize="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/tiel2"
+                android:text="@string/bang"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bang_1"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"/>
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bang_2"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"/>
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bang_3"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"/>
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bang_4"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"/>
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bang_5"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"/>
+            <ImageView
+                android:id="@+id/img6"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bang_6"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

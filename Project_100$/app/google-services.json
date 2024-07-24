@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1054200622633",
+    "project_id": "sotayconyeu",
+    "storage_bucket": "sotayconyeu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054200622633:android:dd4852ef19f7ef4a953638",
+        "android_client_info": {
+          "package_name": "com.example.do_annhom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054200622633-rablb979lsi6fa6egm9u7jqr1009mvjb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0LZz8h8oxvd1Sxi4uCj3xslStdN7BMUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054200622633-rablb979lsi6fa6egm9u7jqr1009mvjb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

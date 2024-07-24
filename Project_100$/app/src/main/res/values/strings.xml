@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">HaQuangMinh_72_BaiBuoi04</string>
+    <string name="contact">Contact</string>
+    <string name="add">Add contact</string>
+    <string name="edit">Edit contact</string>
+    <string name="bang">Bảng chiều cao cân nặng chuẩn của trẻ em là căn cứ quan trọng để bố mẹ theo dõi sức khỏe và mức độ phát triển của con mình.\n
+
+Theo các chuyên gia dinh dưỡng, từ lúc sinh ra cho đến 3 tuổi, bé cần được theo dõi sự phát triển về chiều cao và cân nặng một cách chặt chẽ. Việc theo dõi này sẽ giúp Ba Mẹ biết được bé có nằm trong phạm vi cân nặng và chiều cao khỏe mạnh hay không, từ đó Ba Mẹ sẽ có chế độ chăm sóc dinh dưỡng tốt nhất cho con.\n
+
+“Bảng chiều cao cân nặng chuẩn của trẻ em từ 0-3 tuổi theo Tổ chức Y tế thế giới (WHO)” dưới đây sẽ giúp mẹ dễ dàng theo dõi được sự phát triển của trẻ trong từng giai đoạn từ sơ sinh 0 tuổi đến 3 tuổi ở cả bé trai và bé gái.</string>
+    <string name="modau">-Con yêu cao lớn và phát triển mỗi ngày luôn là mong mỏi của bậc làm cha mẹ. Chính vì vậy, việc so sánh chiều cao cân nặng của trẻ với bảng chiều cao cân nặng chuẩn của bé mới nhất là một trong những yếu tố quan trọng giúp mẹ nhận biết được tình trạng sức khỏe và thể chất của bé yêu để có sự can thiệp kịp thời là điều rất quan trọng.\n\nCân nặng ,chiều cao là 2 chỉ số quan trọng giúp bạn có thể theo dõi sự phát triển khỏe mạnh của trẻ. Bạn hãy cập nhật và theo dõi thường xuyên các thông tin hữu ích sau:\n\n -Ghi nhớ quá trình phát triển của con \n -So sánh mốc cân nặng chiều cao với tiêu chuẩn quốc tế WHO \n -Nhận biết nguy cơ thừa cân, béo phì, suy dinh dưỡng </string>
+    <string-array name="data">
+        <item>sơ sinh</item>
+        <item>1 tháng</item>
+        <item>2 tháng</item>
+        <item>3 tháng</item>
+        <item>4 tháng</item>
+        <item>5 tháng</item>
+        <item>6 tháng</item>
+        <item>7 tháng</item>
+        <item>8 tháng</item>
+        <item>9 tháng</item>
+        <item>12 tháng</item>
+        <item>15 tháng</item>
+        <item>18 tháng</item>
+        <item>21 tháng</item>
+        <item>2 tuổi</item>
+        <item>2,5 tuổi</item>
+        <item>3 tuổi</item>
+    </string-array>
+    <string-array name="tenmuitiem">
+        <item>Lao</item>
+        <item>Viêm gan B(24 giờ sau sinh)</item>
+        <item>Viêm gan B</item>
+        <item>Phế cầu</item>
+        <item>Tiêu chảy do vi rút Rota</item>
+        <item>Bạch cầu,ho gà, uốn ván, bại liệt, viêm gan B,HiB</item>
+        <item>Cúm</item>
+        <item>Viêm màng não do mô cầu BC</item>
+        <item>Viêm màng não do mô cầu AC</item>
+        <item>Sởi đơn</item>
+        <item>Viêm não nhật bản B</item>
+        <item>Viêm gan A</item>
+        <item>Sởi-Quai bị-Rubella</item>
+        <item>Thủy đậu</item>
+        <item>Thương hàn</item>
+        <item>Bệnh tả</item>
+    </string-array>
+    <string-array name="somui">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="data_tuoi">
+        <item>sơ sinh</item>
+        <item>2 tháng</item>
+        <item>3 tháng</item>
+        <item>4 tháng</item>
+        <item>6 tháng</item>
+        <item>7 tháng</item>
+        <item>8 tháng</item>
+        <item>9 tháng</item>
+        <item>10 tháng</item>
+        <item>12 tháng</item>
+        <item>15 tháng</item>
+        <item>18 tháng</item>
+        <item>2 đến 3 tuổi</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

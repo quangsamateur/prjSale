@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_homnay"
+        android:title="Hôm nay"
+        android:icon="@drawable/baseline_home_24"/>
+    <item
+        android:id="@+id/item_conyeu"
+        android:title="Con Yêu"
+        android:icon="@drawable/baseline_baby_changing_station_24"/>
+    <item
+        android:id="@+id/item_tiemchung"
+        android:title="Tiêm chủng"
+        android:icon="@drawable/baseline_create_24"/>
+</menu>

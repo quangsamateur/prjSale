@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lichtrichngua.ContactInfoLapLichActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#E91E63"
+        android:gravity="center"
+        app:title="Xem chi tiết lập lịch tiêm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-42dp">
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/ecan"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="#E91E63"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên mũi tiêm"/>
+
+    <TextView
+        android:id="@+id/edit_muitiem"
+        android:layout_below="@id/ecan"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape"
+        android:backgroundTint="#4DE91E63"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:text="Lao" />
+    <!---->
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#E91E63"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:id="@+id/ecc"
+        android:layout_below="@id/edit_muitiem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên vắc-xin"/>
+
+
+    <TextView
+        android:id="@+id/edit_vacxin"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/ecc"
+        android:layout_height="40dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@drawable/shape"
+        android:backgroundTint="#4DE91E63"
+        android:inputType="textPersonName"
+        android:text="fsdg" />
+    <!---->
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/eghichu"
+        android:textColor="#E91E63"
+        android:textSize="17dp"
+        android:layout_below="@id/edit_vacxin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ghi chú"/>
+
+
+    <TextView
+        android:id="@+id/edghichu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eghichu"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@drawable/shape"
+        android:backgroundTint="#4DE91E63"
+        android:inputType="textEmailAddress"
+        android:text="Nhập ghi chú" />
+
+    <TextView
+        android:id="@+id/engay"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="#E91E63"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edghichu"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:text="Ngày tiêm" />
+
+    <TextView
+        android:id="@+id/edngaytiem"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/engay"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/shape"
+        android:backgroundTint="#4DE91E63"
+        android:focusableInTouchMode="false"
+        android:padding="10dp"
+        android:text="01/01/1980" />
+
+    <TextView
+        android:id="@+id/engioitinh"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="#E91E63"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edngaytiem"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:text="Mũi số " />
+
+    <TextView
+        android:id="@+id/edmuiso"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape"
+        android:backgroundTint="#4DE91E63"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/engioitinh"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="10dp"
+        android:layout_alignParentStart="true"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:focusableInTouchMode="false"
+        android:text="1" />
+    <TextView
+        android:id="@+id/entuoi"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="#E91E63"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edmuiso"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:text="Độ tuổi" />
+
+    <TextView
+        android:id="@+id/edtuoi"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape"
+        android:backgroundTint="#4DE91E63"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/entuoi"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="10dp"
+        android:layout_alignParentStart="true"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:focusableInTouchMode="false"
+        android:text="1 tháng " />
+    <TextView
+        android:id="@+id/encosotiem"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="#E91E63"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtuoi"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:text="Cơ sở tiêm" />
+
+    <TextView
+        android:id="@+id/edcosotiem"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape"
+        android:backgroundTint="#4DE91E63"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/encosotiem"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="10dp"
+        android:layout_alignParentStart="true"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:focusableInTouchMode="false"
+        android:text="tháng " />
+    <TextView
+        android:id="@+id/engio"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="#E91E63"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edcosotiem"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:text="Giờ tiêm"/>
+    <TextView android:id="@+id/edgiotiem"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape"
+        android:backgroundTint="#4DE91E63"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/engio"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="10dp"
+        android:layout_alignParentStart="true"
+        android:textSize="16dp" android:textStyle="bold"
+        android:focusableInTouchMode="false"
+        android:text="tháng "/>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cannangchieucao.MainActivity2">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#E91E63"
+        android:gravity="center"
+        app:title="Cân nặng, chiều cao"></androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/fabAddContact"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/toolbar"
+        android:paddingLeft="5dp"
+        android:clickable="true"
+        android:backgroundTint="#F3A7C0"
+        android:background="@drawable/shape"
+        android:textColor="@color/black"
+        android:layout_marginRight="16dp"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:text="Bạn có muôn thêm cân nặng,chiều cao?"
+       />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvContacts"
+        android:layout_below="@id/fabAddContact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        tools:listitem="@layout/item_cannang_chieucao" />
+</RelativeLayout>

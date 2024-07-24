@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#4CAF50"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomNayFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_homnay"
+            android:layout_width="match_parent"
+            android:layout_height="414dp"
+            android:src="@drawable/home" />
+
+          <ScrollView
+              android:id="@+id/src_view"
+              android:layout_below="@id/img_homnay"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+             <RelativeLayout
+                 android:background="#4CAF50"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <ImageView
+                     android:id="@+id/igvi_thontinconyeu"
+                     android:layout_width="150dp"
+                     android:layout_marginLeft="30dp"
+                     android:src="@drawable/thongtinconyeu"
+                     android:layout_height="wrap_content"/>
+                 <ImageView
+                     android:id="@+id/igvi_cannangchieucao"
+                     android:layout_width="wrap_content"
+                     android:layout_alignParentRight="true"
+                     android:src="@drawable/canang"
+                     android:layout_marginRight="30dp"
+                     android:layout_height="wrap_content"/>
+             </RelativeLayout>
+          </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>

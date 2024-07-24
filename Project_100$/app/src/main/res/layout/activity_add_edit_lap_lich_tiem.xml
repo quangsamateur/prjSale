@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Do_annhom"
+    tools:context=".lichtrichngua.AddEdit_LapLichActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#E91E63"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:title="Thông tin mũi tiêm"
+        tools:layout_editor_absoluteX="-42dp"></androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txiputlayout_cosotiem"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="#E91E63"
+        android:hint="Cơ sở tiêm"
+        android:textColorHint="#E91E63"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_cosotiem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tivacxin"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Tên vắc-xin"
+        android:textColorHint="#E91E63"
+        app:layout_constraintEnd_toEndOf="@+id/txiputlayout_cosotiem"
+        app:layout_constraintStart_toStartOf="@+id/txiputlayout_cosotiem"
+        app:layout_constraintTop_toBottomOf="@+id/txiputlayout_cosotiem">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_vacxin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tighichu"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Ghi chú:"
+        android:textColorHint="#E91E63"
+        app:layout_constraintEnd_toEndOf="@+id/tivacxin"
+        app:layout_constraintStart_toStartOf="@+id/tivacxin"
+        app:layout_constraintTop_toBottomOf="@+id/tivacxin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edghichu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tingaytiem"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:hint="Ngày tiêm"
+        android:textColorHint="#E91E63"
+        app:layout_constraintTop_toBottomOf="@+id/tighichu"
+        tools:layout_editor_absoluteX="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edngaytiem"
+            android:layout_width="match_parent"
+            android:backgroundTint="#E91E63"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="false"
+            android:text="" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tigio"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:hint="Giờ đi tiêm"
+        android:textColorHint="#E91E63"
+        app:layout_constraintStart_toStartOf="@+id/tingaytiem"
+        app:layout_constraintTop_toBottomOf="@+id/tingaytiem"
+        tools:layout_editor_absoluteX="16dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edgio"
+            android:layout_width="match_parent"
+            android:backgroundTint="#E91E63"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="false"
+            android:text=""/>
+    </com.google.android.material.textfield.TextInputLayout>
+<RelativeLayout
+    android:id="@+id/dt_ms"
+    app:layout_constraintEnd_toEndOf="@+id/tigio"
+    app:layout_constraintStart_toStartOf="@+id/tigio"
+    app:layout_constraintTop_toBottomOf="@+id/tigio"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/ll1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/dt"
+                android:layout_width="wrap_content"
+                android:text="Độ tuổi"
+                android:layout_marginLeft="16dp"
+                android:textColor="#E91E63"
+                android:layout_height="wrap_content"/>
+            <Spinner
+                android:layout_marginTop="5dp"
+                android:id="@+id/spage"
+                android:layout_width="160dp"
+                android:layout_below="@id/dt"
+                android:layout_height="32dp"
+                android:entries="@array/data"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/shape"
+                android:textAlignment="center"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/ll2"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/dt2"
+                android:layout_width="wrap_content"
+                android:text="Mũi số"
+                android:layout_marginLeft="16dp"
+                android:textColor="#E91E63"
+                android:layout_height="wrap_content"/>
+            <Spinner
+                android:layout_marginTop="5dp"
+                android:id="@+id/spmuiso"
+                android:layout_width="160dp"
+                android:layout_below="@id/dt2"
+                android:layout_height="32dp"
+                android:entries="@array/somui"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/shape"
+                android:textAlignment="center"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:orientation="vertical"
+       android:layout_below="@id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mt2"
+            android:layout_width="wrap_content"
+            android:text="Tên mũi tiêm"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="#E91E63"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/spmuitiem"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_below="@id/mt2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/shape"
+            android:entries="@array/tenmuitiem"
+            android:textAlignment="center" />
+    </RelativeLayout>
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/thu1"
+        app:layout_constraintEnd_toEndOf="@+id/dt_ms"
+        app:layout_constraintStart_toStartOf="@+id/dt_ms"
+        app:layout_constraintTop_toBottomOf="@+id/dt_ms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ten mui tiem"/>
+    <TextView
+        android:id="@+id/thu2"
+        app:layout_constraintEnd_toEndOf="@+id/thu1"
+        app:layout_constraintStart_toStartOf="@+id/thu1"
+        app:layout_constraintTop_toBottomOf="@+id/thu1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tmui so"/>
+    <TextView
+        android:id="@+id/thu3"
+        app:layout_constraintEnd_toEndOf="@+id/thu2"
+        app:layout_constraintStart_toStartOf="@+id/thu2"
+        app:layout_constraintTop_toBottomOf="@+id/thu2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tuoi"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

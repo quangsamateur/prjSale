@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardElevation="5dp"
+    android:id="@+id/mainCard_cannang"
+    app:cardCornerRadius="25dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:elevation="5dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/edit_sua"
+            android:layout_marginTop="5dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:backgroundTint="#CCCACB"
+            android:background="@drawable/shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sửa"/>
+
+        <TextView
+            android:id="@+id/tentiem"
+            android:text="dooomod"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="156dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/edit_xoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="#B8B6B7"
+            android:text="Xóa"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_below="@id/edit_sua"
+            android:layout_marginTop="6dp"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rela_1"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <!--        anh 1-->
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rela_5"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/rela_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:backgroundTint="#F44336"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_caditor"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tên mũi tiêm: "/>
+                    <TextView
+                        android:id="@+id/tvmuitiem"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="bạn"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rela_8"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@id/rela_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:backgroundTint="#4CAF50"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_caditor"/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mũi số:"/>
+                    <TextView
+                        android:id="@+id/tvmuiso"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

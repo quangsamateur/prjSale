@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Do_annhom"
+    tools:context=".cannangchieucao.AddEditActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#E91E63"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:title="Cân nặng, chiều cao"
+        tools:layout_editor_absoluteX="-42dp"></androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txiputlayout_cannang"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="#E91E63"
+        android:hint="Cân nặng(kg)"
+        android:textColorHint="#E91E63"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_canang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiChieucao"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Chiều cao(cm)"
+        android:textColorHint="#E91E63"
+        app:layout_constraintEnd_toEndOf="@+id/txiputlayout_cannang"
+        app:layout_constraintStart_toStartOf="@+id/txiputlayout_cannang"
+        app:layout_constraintTop_toBottomOf="@+id/txiputlayout_cannang">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_chieucao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tighichu"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Ghi chú:"
+        android:textColorHint="#E91E63"
+        app:layout_constraintEnd_toEndOf="@+id/tiChieucao"
+        app:layout_constraintStart_toStartOf="@+id/tiChieucao"
+        app:layout_constraintTop_toBottomOf="@+id/tiChieucao">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edghichu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Nhập ghi chú" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tingaydo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:hint="Ngày cân đo"
+        android:textColorHint="#E91E63"
+        app:layout_constraintTop_toBottomOf="@+id/tighichu"
+        tools:layout_editor_absoluteX="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edngaydo"
+            android:layout_width="match_parent"
+            android:backgroundTint="#E91E63"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="false"
+            android:text="01/01/1980" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvgt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:text="Giới tính con bạn"
+        android:textColor="#E91E63"
+        app:layout_constraintStart_toStartOf="@+id/tingaydo"
+        app:layout_constraintTop_toBottomOf="@+id/tingaydo" />
+
+    <RadioGroup
+        android:id="@+id/rgPercentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:background="@drawable/shape"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/tvgt"
+        app:layout_constraintTop_toBottomOf="@+id/tvgt">
+
+        <RadioButton
+            android:id="@+id/rbtrai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#E91E63"
+            android:layout_gravity="center"
+            android:checked="true"
+            android:text="Con trai" />
+
+        <RadioButton
+            android:id="@+id/rbgai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:buttonTint="#E91E63"
+            android:text="Con gái" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:text="Độ tuổi con bạn"
+        android:textColor="#E91E63"
+        app:layout_constraintStart_toStartOf="@+id/rgPercentage"
+        app:layout_constraintTop_toBottomOf="@+id/rgPercentage" />
+    <Spinner
+        android:layout_marginTop="5dp"
+        android:id="@+id/spage"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:entries="@array/data"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/shape"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/tvg"
+        app:layout_constraintTop_toBottomOf="@+id/tvg" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ed_bmi"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="16dp"
+        android:hint="Ngày cân đo"
+        android:textColorHint="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/rgPercentage"
+        tools:layout_editor_absoluteX="16dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/edtgioitinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="128dp"
+        android:focusableInTouchMode="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgPercentage" />
+
+    <TextView
+        android:id="@+id/edtthongbao1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:focusableInTouchMode="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgPercentage" />
+
+    <TextView
+        android:id="@+id/edtthongbao2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:focusableInTouchMode="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgPercentage" />
+
+    <TextView
+        android:id="@+id/edbmi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:focusableInTouchMode="false"
+        android:text="bmi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtthongbao1" />
+    <TextView
+        android:id="@+id/edngaydo_tuoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:focusableInTouchMode="false"
+        android:text="bmi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtthongbao1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="@color/white"
+    tools:context=".fragment.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/baseline_menu_24"
+            android:id="@+id/tx_menu_next_dangnhap"/>
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="375dp"
+            app:tint="#E91E63"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/baseline_notifications_none_24" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tx_so_theo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="49dp"
+        android:text="Sổ theo dõi sức khỏe"
+        android:textColor="@color/black"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/tx_tao_moi_cua_so"
+        android:layout_below="@id/tx_so_theo"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/shape_add"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+       <RelativeLayout
+           android:id="@+id/reka"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <ImageView
+               android:id="@+id/image"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+
+               android:gravity="left"
+               android:src="@drawable/download" />
+           <TextView
+               android:id="@+id/tx_next_icon"
+               android:layout_toRightOf="@id/image"
+               android:layout_width="wrap_content"
+               android:layout_marginTop="18dp"
+               android:layout_height="wrap_content"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+               android:text="Cửa sổ theo dõi sức khỏe"/>
+           <TextView
+               android:id="@+id/nextio"
+               android:layout_width="wrap_content"
+               android:layout_toRightOf="@id/image"
+               android:layout_below="@id/tx_next_icon"
+               android:layout_height="wrap_content"
+               android:textColor="@color/black"
+               android:text="Cho mẹ và bé"/>
+
+           <ImageView
+               android:id="@+id/next"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentTop="true"
+               android:layout_marginLeft="114dp"
+               android:layout_marginTop="16dp"
+               android:layout_toRightOf="@+id/nextio"
+               android:src="@drawable/baseline_navigate_next_24" />
+       </RelativeLayout>
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>

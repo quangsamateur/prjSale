@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CAF50"
+    tools:context=".fragment.ConYeuFragment">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iml"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:src="@drawable/cc" />
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_below="@id/iml"
+        android:background="#4CAF50"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@drawable/shape"
+            android:backgroundTint="#09870E"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imv_thongtinconyeu"
+                android:layout_width="200dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/ttongtinconyeu"
+                android:layout_height="190dp"/>
+            <ImageView
+                android:id="@+id/imv_cannang_cc"
+                android:layout_width="200dp"
+                android:layout_marginTop="25dp"
+               android:layout_toRightOf="@id/imv_thongtinconyeu"
+                android:src="@drawable/ttcannanbgchieucao"
+                android:layout_height="190dp"/>
+            <ImageView
+                android:id="@+id/imv_caccotmocphattrien"
+                android:layout_width="200dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@id/imv_thongtinconyeu"
+                android:src="@drawable/ttcacmocphattrien"
+                android:layout_height="190dp"/>
+            <ImageView
+                android:id="@+id/imv_anuongsua"
+                android:layout_width="200dp"
+                android:layout_toRightOf="@id/imv_caccotmocphattrien"
+                android:layout_below="@id/imv_cannang_cc"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/ttanuongsua"
+                android:layout_height="190dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+</FrameLayout>
